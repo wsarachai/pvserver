@@ -1,0 +1,34 @@
+## Query method
+https://sequelize.org/master/manual/querying.html
+
+$ node_modules/.bin/sequelize init
+$ node_modules/.bin/sequelize model:generate --name Current --attributes current_value_of_consumption:decimal,external_energy_supply:decimal,internal_power_supply:decimal,current_power:decimal,self_consumption:decimal,grid_feed_in:decimal,total_energy_fed:decimal
+$ node_modules/.bin/sequelize model:generate --name PVStation --attributes station_name:string,station_power:integer,station_location:string,station_commissioning_date:date
+$ node_modules/.bin/sequelize model:generate --name PVDevice --attributes device_unit:integer,device_name:string,device_class:string,device_product_group:string,device_serial_number:string,device_manufacturer:string,device_ip:string,device_port:integer,device_status:string,comm_data_request_interval:integer,invertor_generator_capacity:integer,type:string,station_id:integer,device_id:integer
+$ node_modules/.bin/sequelize model:generate --name Register --attributes register_number:integer,description:string,number_of_word:integer,data_type:string,unit_scale:integer,format:string,access:string
+$ node_modules/.bin/sequelize model:generate --name PVDeviceRegister --attributes pvdevice_id:integer,register_id:integer
+
+
+$ node_modules/.bin/sequelize db:migrate
+
+##
+Checking the database
+
+$ sqlite3 database.sqlite3
+
+sqlite> .headers ON
+sqlite> select * from SequelizeMeta;
+
+
+$ node_modules/.bin/sequelize seed:generate --name seed-Current.js
+$ node_modules/.bin/sequelize seed:generate --name seed-PVStation.js
+$ node_modules/.bin/sequelize seed:generate --name seed-PVDevice.js
+$ node_modules/.bin/sequelize seed:generate --name seed-Register.js
+$ node_modules/.bin/sequelize seed:generate --name seed-PVDeviceRegister.js
+
+
+$ node_modules/.bin/sequelize db:seed --seed 20200409173406-seed-PVDevice.js
+$ node_modules/.bin/sequelize db:seed --seed 20200409173359-seed-PVStation.js.js
+
+$ node_modules/.bin/sequelize db:seed:all
+
