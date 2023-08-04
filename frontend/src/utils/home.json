@@ -1,0 +1,49 @@
+{
+  "status": "failed",
+  "currentPvPower": {
+    "power": 0,
+    "unit": "W"
+  },
+  "currentConsumption": {
+    "consumption": 0,
+    "unit": "W"
+  },
+  "currentPvSystemStatus": {
+    "status": true
+  },
+  "inverterComparisonStatus": {
+    "comparisionStatus": "Warning: Unexpected deviation at 4/3/2020"
+  },
+  "pvEnergy": {
+    "energy": {
+      "power": 0,
+      "unit": "kWh"
+    },
+    "total": {
+      "power": 0,
+      "unit": "MWh"
+    }
+  },
+  "co2Avoided": {
+    "avoided": {
+      "power": 0,
+      "unit": "kg"
+    },
+    "total": {
+      "power": 0,
+      "unit": "t"
+    }
+  },
+  "pvSystemInformation": {
+    "systemPower": 0,
+    "unit": "kWp",
+    "commissioning": "--/--/----"
+  },
+  "weatherFor": {
+    "station": "",
+    "status": "No weather data!",
+    "icon": "",
+    "description": ""
+  },
+  "location": {}
+}

@@ -1,0 +1,7 @@
+export const ENERGY_BALANCE_CURRENT = '/api/pv/current'
+export const ENERGY_BALANCE_DAY = '/api/pv/day'
+export const ENERGY_BALANCE_MONTH = '/api/pv/month'
+export const ENERGY_BALANCE_YEAR = '/api/pv/year'
+export const ENERGY_BALANCE_TOTAL = '/api/pv/total'
+export const CURRENT_STATUS = '/api/pv/current/status'
+export const CURRENT_DASHBOARD_STATUS = '/api/pv/current/dashboard'

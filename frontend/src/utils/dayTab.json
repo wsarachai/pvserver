@@ -1,0 +1,154 @@
+{
+  "dailyConsumption": "140.76",
+  "externalEnergySupply": "47.08",
+  "internalEnergySupply": "93.68",
+  "dailyYield": "345.76",
+  "selfConsumption": "93.68",
+  "gridFeedIn": "252.08",
+  "consumptions":[
+    {
+      "name":"12:00 AM",
+      "EES":7
+    },
+    {
+      "name":"12:10 AM",
+      "EES":8
+    },
+    {
+      "name":"12:20 AM",
+      "EES":9
+    },
+    {
+      "name":"12:30 AM",
+      "EES":10
+    },
+    {
+      "name":"12:40 AM",
+      "EES":7
+    },
+    {
+      "name":"12:50 AM",
+      "EES":8
+    },
+    {
+      "name":"13:00 AM",
+      "EES":9
+    },
+    {
+      "name":"13:00 AM",
+      "EES":10
+    },
+    {
+      "name":"13:10 AM",
+      "EES":11
+    },
+    {
+      "name":"13:20 AM",
+      "EES":7
+    },
+    {
+      "name":"13:30 AM",
+      "EES":7
+    },
+    {
+      "name":"13:40 AM",
+      "EES":8
+    },
+    {
+      "name":"13:50 AM",
+      "EES":10
+    },
+    {
+      "name":"2:00 AM",
+      "EES":8
+    },
+    {
+      "name":"4:00 AM",
+      "EES":7
+    },
+    {
+      "name":"6:00 AM",
+      "EES":7
+    },
+    {
+      "name":"8:00 AM",
+      "EES":7
+    },
+    {
+      "name":"10:00 AM",
+      "EES":7
+    },
+    {
+      "name":"12:00 PM",
+      "EES":7
+    },
+    {
+      "name":"2:00 PM",
+      "EES":7
+    },
+    {
+      "name":"4:00 PM",
+      "EES":7
+    },
+    {
+      "name":"6:00 PM",
+      "EES":7
+    },
+    {
+      "name":"8:00 PM",
+      "EES":7
+    },
+    {
+      "name":"10:00 PM",
+      "EES":7
+    }
+  ],
+  "generations":[
+    {
+      "name":"12:00 AM"
+    },
+    {
+      "name":"2:00 AM"
+    },
+    {
+      "name":"4:00 AM"
+    },
+    {
+      "name":"6:00 AM",
+      "SC": "4",
+      "Grid": "0"
+    },
+    {
+      "name":"8:00 AM",
+      "SC": "6",
+      "Grid": "4"
+    },
+    {
+      "name":"10:00 AM",
+      "SC": "20",
+      "Grid": "10"
+    },
+    {
+      "name":"12:00 PM",
+      "SC": "30",
+      "Grid": "20"
+    },
+    {
+      "name":"2:00 PM",
+      "SC": "25",
+      "Grid": "15"
+    },
+    {
+      "name":"4:00 PM"
+    },
+    {
+      "name":"6:00 PM"
+    },
+    {
+      "name":"8:00 PM"
+    },
+    {
+      "name":"10:00 PM"
+    }
+  ]
+}

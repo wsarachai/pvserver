@@ -1,0 +1,37 @@
+{
+  "status": "failed",
+  "pvStatus": {
+    "pvFeedInStatus": {
+      "power": 0.00,
+      "unit": "W",
+      "status": "home"
+    },
+    "homeConsumptionStatus": {
+      "total_consumption": 0.00,
+      "pv_feed_in": 0.00,
+      "unit": "W",
+      "status": "none",
+      "source": "pv-system"
+    },
+    "gridLineStatus": {
+      "power": 0.00,
+      "unit": "W",
+      "status": "demand"
+    }
+  },
+  "batteryStatus": {
+    "charging": 0.00,
+    "state_of_charging": 0.00,
+    "unit": "W",
+    "status": "none",
+    "level": 0
+  },
+  "quoteStatus": {
+    "selfSufficiency": {
+      "now": 0
+    },
+    "selfConsumption": {
+      "now": 0
+    }
+  }
+}

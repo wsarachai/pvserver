@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  mysql:
+    container_name: mysql
+    image: mysql
+    restart: always
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+      - ./init:/docker-entrypoint-initdb.d/:ro
+    environment:
+      - MYSQL_ROOT_PASSWORD=1234
+      - MYSQL_DATABASE=pvdb
+    ports:
+      - "3306:3306"
+
+  # backend:
+  #   build:
+  #     context: ./backend
+  #     dockerfile: Dockerfile
+  #   container_name: backend-node
+  #   ports:
+  #     - 3000:3000
+  #   depends_on:
+  #     - mysql
